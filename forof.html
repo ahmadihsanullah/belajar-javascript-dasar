@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Of</title>
+</head>
+<body>
+    <h1>For of for get value only => string array, etc.</h1>
+    <script>
+        const names = ["Ahmad","Ihsanullah","Rabbani"];
+        for (const name of names) {
+            document.writeln("<p>" + name + "</p>");
+        }
+
+        const fullName = 'Ahmad Ihsanullah Rabbani';
+
+        for(const character of fullName){
+            document.writeln("<p>" + character + "</p>");
+        }
+
+        const Person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30,
+        }
+        for (const name of Person) {
+                document.writeln("<p>" + name + "</p>");
+            }
+    </script>
+</body>
+</html>

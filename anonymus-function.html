@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymus Function</title>
+</head>
+
+<body>
+    <script>
+        //anonymus function on variable
+        const say = function (name) {
+            document.writeln(`<p>Hello ${name}</p>`)
+        }
+
+        say("Eko");
+        say("Budi");
+
+        //anonymus function on parameter function
+        function giveMeName(callback) {
+            callback("Eko");
+        }
+
+        giveMeName(say);
+
+        giveMeName(function (name) {
+            document.writeln(`<p>Hi ${name}</p>`);
+        });
+
+        giveMeName( (name) => {
+            document.writeln(`<p>Hi ${name}</p>`);
+        });
+
+    </script>
+</body>
+
+</html>

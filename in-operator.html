@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Person = {
+            firstName: 'John',
+            lastName: 'Doe'
+        };
+
+        if("firstName" in Person){
+            alert('hello ' + Person.firstName);
+        }
+
+        // Kode: In Operator Undefined / Null Property
+        const person = {
+            lastName: undefined
+        };
+        const result = "lastName" in person;
+        document.writeln(`${result} `);
+
+        const names = [null, 'ahmad', null];
+        const nameResult = 0 in names; //true
+        document.writeln(`${nameResult} `);
+    </script>
+</body>
+</html>

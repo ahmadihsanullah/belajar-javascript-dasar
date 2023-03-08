@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        // create object
+        const orang = {};
+
+        // add or update object
+        orang['name'] = 'Ahmad Ihsanullah Rabbani';
+        orang['age'] = 20;
+        orang['location'] = "Kab.Bogor";
+
+        // delete obejct
+        delete orang['age'];
+        console.table(orang);
+
+        // membuat objek dengan properties
+        const orang2 = {
+            name: 'Ahmad Ihsanullah Rabbani',
+            age: 20,
+            address: "Kab.Bogor",
+        }
+
+        console.info(`Nama : ${orang2.name}`);
+        console.info(`Umur : ${orang2.age}`);
+        console.info(`Alamat : ${orang2.address}`);
+
+    </script>
+</body>
+</html>

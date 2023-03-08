@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPerator Logikan Non Boolean</title>
+</head>
+
+<body>
+    <script>
+        // OPerator || akan mengambil nilai yang thruty dari kiri
+        console.info('hello' || ""); // "hello" => thruty, "" => falsy
+        console.info("" || []);
+        console.info("0" || "NOL");
+        console.info(0 || "NOL");
+        console.info(null || "NULL");
+        console.info(undefined || "UNDEFINED");
+        console.info(0 || false);
+
+        const Person = {
+            firstName: '',
+            lastName: 'Ihsanullah'
+        };
+
+        const name = Person.firstName || Person.lastName;
+        console.info(name);
+
+        // OPerator && akan mengambil nilai yang thruty dari kiri
+        console.info('hello' && "");     // "hello" => thruty, "" => falsy
+        console.info("" && []);
+        console.info("0" && "NOL");
+        console.info(0 && "NOL");
+        console.info(null && "NULL");
+        console.info(undefined && "UNDEFINED");
+        console.info(0 && false);
+
+    </script>
+</body>
+
+</html>
